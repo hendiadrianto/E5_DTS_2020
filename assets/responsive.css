@@ -3,28 +3,123 @@
     width: 50%;
     margin-bottom: 50px;
   }
-  
+
   .top-wrapper h1 {
     font-size: 32px;
   }
-}
 
-  @media (max-width: 670px) {
-  .lesson {
-    width: 100%;
+  /*  */
+
+  footer {
+    text-align: center;
   }
-
-   .top-wrapper {
+  .page-footer {
+    height: 600px;
+  }
+  .footer-top {
+    width: 100%;
+    display: block;
+  }
+  .footer-top img {
+    float: left;
+    margin-right: 400px;
+    margin-bottom: 20px;
+  }
+  .footer-middle h2 {
     text-align: left;
   }
-  
-  .top-wrapper h1 {
-    font-size: 24px;
-    line-height: 36px;
+  .footer-middle ul li {
+    text-align: left;
   }
-  
-  .top-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
+  .footer-middle .btn {
+    padding-left: 25px;
+  }
+  .footer-bottom {
+    padding-left: 15px;
+    padding-top: 25px;
+    width: 100%;
+  }
+  .form-control {
+    overflow: hidden;
+  }
+  .footer-inside-ground {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid white;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  /*  */
+  .menu-icon {
+    display: block;
+  }
+  .header-left {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  header {
+    width: 50%;
+  }
+  .container {
+    width: 50%;
+  }
+
+  /*  */
+  .page-footer {
+    height: 650px;
+  }
+  .footer-top {
+    width: 100%;
+    padding-right: 15px;
+  }
+  .footer-top img {
+    float: center;
+    margin-left: 43%;
+    margin-bottom: 20px;
+  }
+  .footer-middle {
+    width: 100%;
+    padding-left: 0;
+  }
+  .footer-middle h2 {
+    text-align: center;
+  }
+  .footer-middle ul li {
+    text-align: center;
+  }
+  .footer-middle .btn {
+    padding-left: 30px;
+  }
+  .footer-bottom {
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 100%;
+  }
+  .form-control {
+    overflow: hidden;
+    width: 300px;
+    padding-bottom: 0;
+  }
+  .footer-inside-ground {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid white;
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0;
   }
 }

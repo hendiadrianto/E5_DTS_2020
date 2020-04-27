@@ -6,25 +6,34 @@
     <title>Project team E5</title>
     <link rel="stylesheet" href="assets/responsive.css" />
     <link rel="stylesheet" href="assets/stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="kode.js"></script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-right">
-          <img class="logo" src="assets/image/logojadi.png" alt="Logo" />
+          <img class="logo" src="assets/image/logojadi.png" />
+          <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">LOGIN</a>
+              <a href="#">TENTANG</a>
+              <a href="#timkami">TIM KAMI</a>
+            </div>
+          </div>
         </div>
+    
+        <button href="javascript:void(0);" onclick="myFunction()" class="fa fa-bars menu-icon"></button>
+    
         <div class="header-left">
-          <ul>
-            <li>LOGIN</li>
-            <li>TENTANG</li>
-            <li>TIM KAMI</li>
-          </ul>
+          <a href="#" class="login">LOGIN</a>
+          <a href="#">TENTANG</a>
+          <a href="#timkami">TIM KAMI</a>
         </div>
       </div>
     </header>
 
     <div class="main">
-      <!-- Khoirul Huda -->
       <div class="top-wrapper">
         <div class="container">
           <h1><mark>WELCOME TO PROJECT E5.</mark></h1>
@@ -45,7 +54,7 @@
           Targetkan 60 Ribu Peserta, Kominfo Gandeng 88 Perguruan Tinggi
           Indonesia Jadi Mitra DTS 2020
         </h2>
-        <img src="assets/image/dts.jpeg" alt="Dts" />
+        <img src="assets/image/dts.jpeg" alt="Dts" class="img">
         <div class="contents-item-hendi">
           <p>
             Menteri Kominfo Johnny G. Plate saat memberikan sambutan dalam acara
@@ -57,42 +66,37 @@
         </div>
       </div>
       <div class="content">
-        <!-- Helma -->
-        <h3 class="section-title">Team Kami</h3>
+        <h3 class="section-title" id="timkami">Team Kami</h3>
         <div class="contents-item">
           <p>Hendi Adrianto</p>
-          <img src="assets/image/luffy.png" alt="Hendi" />
+          <img src="assets/image/luffy.png" alt="Hendi" class="img-tim">
         </div>
         <div class="contents-item">
           <p>Khoirul Huda</p>
-          <img src="assets/image/kuroko.png" alt="Khoirul" />
+          <img src="assets/image/kuroko.png" alt="Khoirul" class="img-tim"/>
         </div>
         <div class="contents-item">
           <p>Helma</p>
-          <img src="assets/image/megumin.png" alt="Helma" />
+          <img src="assets/image/megumin.png" alt="Helma" class="img-tim"/>
         </div>
         <div class="contents-item">
           <p>Imam Mustofa</p>
-          <img src="assets/image/shiba.png" alt="Imam" />
+          <img src="assets/image/shiba.png" alt="Imam" class="img-tim"/>
         </div>
         <div class="contents-item">
           <p>Irsyad Nur Hakim</p>
-          <img src="assets/image/kirito.png" alt="Irsyad" />
+          <img src="assets/image/kirito.png" alt="Irsyad" class="img-tim"/>
         </div>
       </div>
     </div>
     <footer>
-      <!-- Imam Mustofa -->
       <div class="page-footer">
         <div class="footer-wrapper">
           <div class="footer-top">
-            <img src="assets/image/logojadi.png" alt="Logo" />
-            <p>
-              Kelompok E5 adalah kelompok untuk tugas mandiri tentang pembuatan
-              halaman website html dan css
-            </p>
+            <img src="assets/image/logo_footer.png">
+            <p>Kelompok E5 adalah kelompok untuk tugas mandiri tentang pembuatan halaman website html dan css</p>
           </div>
-
+    
           <div class="footer-middle">
             <h2>Links</h2>
             <ul>
@@ -102,62 +106,33 @@
               <li><a href="">Social Link</a></li>
             </ul>
             <div class="btn-wrapper">
-              <a href="https://www.facebook.com/" class="btn facebook"
-                ><span class="fa fa-facebook"></span
-              ></a>
-              <a href="https://www.twitter.com/" class="btn twitter"
-                ><span class="fa fa-twitter"></span
-              ></a>
-              <a href="https://www.instagram.com/" class="btn instagram"
-                ><span class="fa fa-instagram"></span
-              ></a>
-              <a href="group_e5" class="btn whatsapp"
-                ><span class="fa fa-whatsapp"></span
-              ></a>
+              <a href="https://www.facebook.com/" class="btn facebook"><span class="fa fa-facebook"></span></a>
+              <a href="https://www.twitter.com/" class="btn twitter"><span class="fa fa-twitter"></span></a>
+              <a href="https://www.instagram.com/" class="btn instagram"><span class="fa fa-instagram"></span></a>
+              <a href="group_e5" class="btn whatsapp"><span class="fa fa-whatsapp"></span></a>
             </div>
+    
           </div>
-
+    
           <div class="footer-bottom">
             <h2>Contact Us</h2>
             <div class="contact-form">
               <form id="contact-form" method="post" action="">
-                <input
-                  name="nama"
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                  required
-                /><br />
-                <input
-                  name="email"
-                  type="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  required
-                /><br />
-                <textarea
-                  name="message"
-                  class="form-control"
-                  placeholder="Message"
-                  required
-                ></textarea
-                ><br />
-                <input
-                  type="text"
-                  class="form-control submit"
-                  value="SEND MESSAGE"
-                /><br />
+                <input name="nama" type="text" class="form-control" placeholder="Your Name" required><br>
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                <textarea name="message" class="form-control" placeholder="Message" required></textarea><br>
+                <input type="text" class="form-control submit" value="SEND MESSAGE"><br>
               </form>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- <p>&copy 2020 | design by group E5</p> -->
-      <div class="footer-ground">
         <div class="footer-inside-ground">
-          &copy 2020 | design by group E5
+          <p>&copy 2020 | design by group E5 </p>
         </div>
+      </div>
+    
+      <!--<div class="footer-ground">-->
+    
       </div>
     </footer>
   </body>
